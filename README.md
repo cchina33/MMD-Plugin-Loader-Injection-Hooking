@@ -1,4 +1,4 @@
-# MMD-Plugin-Loader-Injection-Hooking
+# MMD Plugin Loader Injection Hooking
 
 ## 1. MMDplugin_development
 `MmdMp4Exporter.dll`: `dllmain.cpp`をビルドしたものです。MMDファイルの直下に配置します。  
