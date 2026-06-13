@@ -97,7 +97,7 @@ LRESULT CALLBACK MirrorWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
         Log("[UI] Mirror window closed by user.");
         return 0;
     }
-    // ★修正1：「M」問題対策。強制的にWide(Unicode)版の標準プロシージャを呼ぶ
+    // 強制的にWide(Unicode)版の標準プロシージャを呼ぶ
     return DefWindowProcW(hWnd, uMsg, wParam, lParam);
 }
 
