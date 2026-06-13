@@ -7,7 +7,7 @@ $MmdPath = "C:\Users\[Username]\Downloads\MikuMikuDance_v932x64\MikuMikuDance_v9
 $DllPath = "C:\Users\[Username]\Downloads\MikuMikuDance_v932x64\MikuMikuDance_v932x64\MmdMp4Exporter.dll"
 
 # ------------------------------------------
-# 以下、自動注入処理（書き換え不要）
+# 以下、書き換え不要
 # ------------------------------------------
 Clear-Host
 Write-Host "MMDを起動しています..." -ForegroundColor Cyan
