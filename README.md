@@ -8,3 +8,7 @@
 ````
 powershell -ExecutionPolicy Bypass .\run_mmd.ps1
 ````
+
+## 2. MMDplugin_d3d9
+`dllmain.cpp`:  C++のソースファイルです。ビルドすると`d3d9.dll`ができます。  
+`d3d9.dll`:MMDと同じディレクトリに「d3d9.dll」として配置することで、MMD起動時に自動的に読み込まれるプロキシ（ラッパー）DLLです。  
