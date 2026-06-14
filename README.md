@@ -3,7 +3,7 @@
 ##  動作環境
 
 - Windows 10 / 11 (64bit)
-- MikuMikuDance Ver9.26(x64) 等で動作確認)
+- MikuMikuDance Ver9.26(x64) 等で動作確認
 - DirectX バージョン: 12 
 
 ## 1. MMDplugin_development
