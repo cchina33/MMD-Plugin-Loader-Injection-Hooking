@@ -191,7 +191,7 @@ HRESULT STDMETHODCALLTYPE HookedPresent(IDirect3DDevice9* pDevice, const RECT* p
             if (SUCCEEDED(pDevice->GetRenderTarget(0, &pMmdBackBuffer))) {
                 if (SUCCEEDED(g_pSwapChain->GetBackBuffer(0, D3DBACKBUFFER_TYPE_MONO, &pMirrorBackBuffer))) {
 
-                    // ★修正2：黒枠対策。MMDが3Dを描画している「ビューポート」だけを取得
+                    // 黒枠対策。MMDが3Dを描画している「ビューポート」だけを取得
                     D3DVIEWPORT9 vp;
                     RECT srcRect;
                     RECT* pSrcRect = NULL;
