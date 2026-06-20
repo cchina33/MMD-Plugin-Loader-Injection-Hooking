@@ -151,7 +151,7 @@ HRESULT STDMETHODCALLTYPE HookedPresent(IDirect3DDevice9* pDevice, const RECT* p
             RECT wr = { 0, 0, 1280, 720 };
             AdjustWindowRect(&wr, dwStyle, FALSE);
 
-            g_hMirrorWnd = CreateWindowW(L"MmdMirrorClass", L"MMDミラー表示", dwStyle,
+            g_hMirrorWnd = CreateWindowW(L"MmdMirrorClass", L"MMD Mirror Preview", dwStyle,
                 CW_USEDEFAULT, CW_USEDEFAULT,
                 wr.right - wr.left, wr.bottom - wr.top,
                 NULL, NULL, wc.hInstance, NULL);
@@ -281,11 +281,11 @@ unsigned __stdcall InitializePlugin(void* pArguments) {
             HMENU hSubMenu = CreatePopupMenu();
 
             // メニュー項目の構築
-            AppendMenuW(hSubMenu, MF_STRING, 9999, L"Mirror Previewを表示");
+            AppendMenuW(hSubMenu, MF_STRING, 9999, L"MMD Mirror Previewを表示");
             AppendMenuW(hSubMenu, MF_SEPARATOR, 0, NULL); // 区切り線
             AppendMenuW(hSubMenu, MF_STRING, 9998, L"バージョン情報"); // バージョン情報追加
 
-            AppendMenuW(hMainMenu, MF_POPUP, (UINT_PTR)hSubMenu, L"MMMPreview");
+            AppendMenuW(hMainMenu, MF_POPUP, (UINT_PTR)hSubMenu, L"MMPreview");
             DrawMenuBar(hMmdWnd);
             Log("[Init] Menu added.");
 
